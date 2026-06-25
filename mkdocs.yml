@@ -1,0 +1,124 @@
+site_name: Kalpavriksha
+site_description: Become Industry Ready
+site_url: https://kalpavriksha.org
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.tabs
+    # - navigation.sections
+    # - navigation.top
+    # - navigation.instant
+    # - search.suggest
+    # - search.highlight
+    # - content.code.copy
+    # - content.tabs.link
+
+  palette:
+    - scheme: slate
+      primary: green
+      accent: green
+      toggle:
+        icon: material/weather-night
+        name: Dark Mode
+
+    - scheme: default
+      primary: green
+      accent: green
+      toggle:
+        icon: material/weather-sunny
+        name: Light Mode
+
+plugins:
+  - search:
+      enabled: false
+  - blog
+  - tags
+
+nav:
+  - Home: index.md
+
+  # - About:
+  #     - Vision: about/vision.md
+  #     - Mentors: about/mentors.md
+
+  # - Learning Path:
+  #     - Overview: roadmap/overview.md
+  #     - Foundation: roadmap/foundation.md
+  #     - DSA: roadmap/dsa.md
+  #     - Software Engineering: roadmap/software-engineering.md
+  #     - Projects: roadmap/projects.md
+  #     - Interview Preparation: roadmap/interview-preparation.md
+
+  # - Tutorials:
+  #     - Overview: tutorials/index.md
+  #     - C Programming: tutorials/c/index.md
+  #     - C++: tutorials/cpp/index.md
+  #     - DSA: tutorials/dsa/index.md
+  #     - Linux: tutorials/linux/index.md
+  #     - Git: tutorials/git/index.md
+  #     - Embedded Systems: tutorials/embedded/index.md
+  #     - System Design: tutorials/system-design/index.md
+
+  # - Placements:
+  #     - Statistics: placements/statistics.md
+  #     - Success Stories: placements/success-stories.md
+
+  # - Projects:
+  #     - Showcase: projects/index.md
+
+  # - Blog:
+  #     - blog/index.md
+
+  # - Resources:
+  #     - resources/index.md
+
+  # - Contact:
+  #     - contact.md
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@kalpavriksha_education
+    - icon: fontawesome/brands/linkedin-in
+      link: https://www.linkedin.com/company/kalpavriksha-education/
+
+copyright: Copyright © 2026 Kalpavriksha. All rights reserved.
+
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
