@@ -11,9 +11,8 @@ hide:
         <p>Practical learning, Real world projects, <br>Placement supports</p>
         <a href="#" class="btn">Explore Courses</a>
     </div>
-
     <div class="hero-image">
-        <img src="assets/images/study.png" alt="Hero Illustration">
+        <img src="assets/images/study.png" alt="Hero Image">
     </div>
 </section>
 
