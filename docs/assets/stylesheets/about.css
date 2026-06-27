@@ -3,6 +3,10 @@
     display: none;
 }
 
+.md-typeset h2 {
+    font-weight: bold;
+}
+
 /* General Layout Setup */
 .about-section {
     /* background-color: #f9fbfd; */
@@ -161,5 +165,86 @@
 @media (max-width: 768px) {
     .mission-block:not(:has(.quote-icon)) {
         padding-left: 2.7rem;
+    }
+}
+
+.features-section {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.features-container {
+    max-width: auto;
+    margin: 0 auto;
+}
+
+.features-heading {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+/* Grid layout with 5 equal columns */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: start;
+}
+
+/* Individual Feature items */
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+    position: relative;
+}
+
+/* Thin vertical divider line styling */
+.feature-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 15%;
+    height: 70%;
+    width: 1px;
+    /* background-color: #e2e8f0; */
+}
+
+/* Green icon layout styling */
+.feature-icon {
+    color: #1e7e34;
+    /* Darker green profile color */
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text label styling under the icon */
+.feature-text {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0;
+    max-width: 160px;
+}
+
+/* Responsive adjustment for tablets and smaller screens */
+@media (max-width: 900px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 0;
+    }
+
+    .feature-item::after {
+        display: none;
+        /* Hide standard dividers on grid collapse */
+    }
+}
+
+@media (max-width: 500px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 32px 0;
     }
 }
