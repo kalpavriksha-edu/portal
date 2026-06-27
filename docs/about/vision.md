@@ -20,7 +20,7 @@ extra_css:
       </p>
     </div>
     <div class="about-image-wrapper">
-      <img src="/assets/images/classroom_presentation_at_Kalpavriksha.png" alt="Classroom presentation at Kalpavriksha" class="about-image">
+      <img src="assets/images/classroom_presentation_at_Kalpavriksha.png" alt="Classroom presentation at Kalpavriksha" class="about-image">
     </div>
   </div>
 </section>
@@ -109,7 +109,7 @@ extra_css:
         <a href="https://www.linkedin.com/in/rakesh-sawan" target="_blank" rel="noopener noreferrer" class="mentor-link">
           <div class="mentor-image-wrapper">
             <!-- Using full section graphic reference as source placeholder -->
-            <img src="/assets/images/rakesh_sawan.jpeg" alt="Rakesh Sawan" class="mentor-image">
+            <img src="assets/images/rakesh_sawan.jpeg" alt="Rakesh Sawan" class="mentor-image">
           </div>
           <h3 class="mentor-name">Rakesh Sawan</h3>
         </a>
