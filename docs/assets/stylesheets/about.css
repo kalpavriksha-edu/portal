@@ -123,24 +123,25 @@
 .mission-block {
     display: flex;
     align-items: flex-start;
-    gap: 16px;
+    gap: .6rem;
     margin-bottom: .5rem;
+    padding-right: .5rem;
     /* Creates clean spacing between stacked paragraphs */
 }
 
 .mission-block:not(:has(.quote-icon)) {
-    padding-left: 44px;
+    padding-left: 2.7rem;
     /* Matches the width + gap of the quote icon */
+}
+
+.mission-block img {
+    width: 2rem;
+    height: 1.6rem;
 }
 
 /* Quote Icon Sizing and Colorization */
 .quote-icon {
-    width: 28px;
-    height: 28px;
-    /* Vibrant green accent color matching the image */
     flex-shrink: 0;
-    margin-top: 2px;
-    /* Subtle alignment adjustment with the first line of text */
 }
 
 /* Mission Descriptive Body Text */
@@ -149,6 +150,7 @@
     line-height: 1.6;
     font-weight: 500;
     margin: 0;
+    text-align: left;
 }
 
 .main-quote {
@@ -158,6 +160,6 @@
 /* Responsive breakpoint for small screens */
 @media (max-width: 768px) {
     .mission-block:not(:has(.quote-icon)) {
-        padding-left: 44px;
+        padding-left: 2.7rem;
     }
 }
