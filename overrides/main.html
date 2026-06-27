@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+{{ super() }}
+
+{% if page %}
+{% set css_files = page.meta.get("extra_css", []) %}
+{% for css in css_files %}
+<link rel="stylesheet" href="{{ css | url }}">
+{% endfor %}
+{% endif %}
+{% endblock %}

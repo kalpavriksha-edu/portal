@@ -38,8 +38,8 @@ plugins:
 nav:
   - Home: index.md
 
-  # - About:
-  #     - Vision: about/vision.md
+  - About:
+      - Vision: about/vision.md
   #     - Mentors: about/mentors.md
 
   # - Learning Path:
