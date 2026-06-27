@@ -204,10 +204,9 @@
     content: "";
     position: absolute;
     right: 0;
-    top: 15%;
-    height: 70%;
-    width: 1px;
-    /* background-color: #e2e8f0; */
+    top: 1rem;
+    height: 60px;
+    border-right: 1px solid #eef2f5;
 }
 
 /* Green icon layout styling */
