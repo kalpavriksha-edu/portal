@@ -1,0 +1,354 @@
+.md-typeset h1 {
+    margin: 0rem 0 0;
+    display: none;
+}
+
+.md-typeset h2 {
+    font-weight: bold;
+}
+
+/* General Layout Setup */
+.about-section {
+    /* background-color: #f9fbfd; */
+    /* Soft off-white background */
+    /* padding: 60px 20px; */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    /* Desktop: Side-by-side */
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80vh;
+    /* padding: 2rem; */
+    /* background-color: #f5f7fa; */
+    /* max-width: 1100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    Slightly larger column for text 
+    gap: 40px;
+    align-items: center; */
+}
+
+/* Typography Styling */
+.about-content {
+    /* color: #1a1a1a; */
+    max-width: 500px;
+}
+
+.about-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #b4b2b2;
+    padding-left: 0rem;
+    margin: 0 0 .64em;
+    line-height: 1;
+}
+
+.about-title {
+    /* font-size: 2rem; */
+    /* font-weight: 700; */
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+    /* padding-left: 1rem; */
+}
+
+.about-subtitle {
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-size: 0.95rem;
+    font-weight: 400;
+    /* color: #4a4a4a; */
+    line-height: 1.6;
+}
+
+/* Image Styling */
+.about-image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+    /* Smooth rounded corners matching the reference image */
+    object-fit: cover;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .about-image-wrapper {
+        justify-content: center;
+    }
+}
+
+/* Container & Background Setup */
+.mission-section {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.mission-container {
+    margin: 0 auto;
+}
+
+/* Heading Styling */
+.mission-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.mission-block {
+    display: flex;
+    align-items: flex-start;
+    gap: .6rem;
+    margin-bottom: .5rem;
+    padding-right: .5rem;
+    /* Creates clean spacing between stacked paragraphs */
+}
+
+.mission-block:not(:has(.quote-icon)) {
+    padding-left: 2.7rem;
+    /* Matches the width + gap of the quote icon */
+}
+
+.mission-block img {
+    width: 2rem;
+    height: 1.6rem;
+}
+
+/* Quote Icon Sizing and Colorization */
+.quote-icon {
+    flex-shrink: 0;
+}
+
+/* Mission Descriptive Body Text */
+.mission-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 500;
+    margin: 0;
+    text-align: left;
+}
+
+.main-quote {
+    font-weight: 500;
+}
+
+/* Responsive breakpoint for small screens */
+@media (max-width: 768px) {
+    .mission-block:not(:has(.quote-icon)) {
+        padding-left: 2.7rem;
+    }
+}
+
+.features-section {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.features-container {
+    max-width: auto;
+    margin: 0 auto;
+}
+
+.features-heading {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+/* Grid layout with 5 equal columns */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: start;
+}
+
+/* Individual Feature items */
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+    position: relative;
+}
+
+/* Thin vertical divider line styling */
+.feature-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    height: 60px;
+    border-right: 1px solid #eef2f5;
+}
+
+/* Green icon layout styling */
+.feature-icon {
+    color: #1e7e34;
+    /* Darker green profile color */
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text label styling under the icon */
+.feature-text {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0;
+    max-width: 160px;
+}
+
+/* Responsive adjustment for tablets and smaller screens */
+@media (max-width: 900px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 0;
+    }
+
+    .feature-item::after {
+        display: none;
+        /* Hide standard dividers on grid collapse */
+    }
+}
+
+@media (max-width: 500px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 32px 0;
+    }
+}
+
+/* Container Setup */
+.mentors-section {
+    /* background-color: #f9fbfd; */
+    /* padding: 60px 20px; */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.mentors-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.mentors-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* color: #1a2530; */
+    margin-bottom: 40px;
+}
+
+/* Grid Layout for the 4 profiles */
+.mentors-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Individual Card Structures */
+.mentor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Clickable wrapper for image + name */
+.mentor-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Circular Image Frame styling */
+.mentor-image-wrapper {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* background-color: #e2e8f0; */
+    margin-bottom: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Fits the avatar image properly */
+.mentor-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hover effects to visually hint clickability */
+.mentor-link:hover .mentor-image-wrapper {
+    transform: scale(1.04);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.mentor-link:hover .mentor-name {
+    color: #0077b5;
+    /* Subtle LinkedIn Blue shift on hover */
+}
+
+/* Text Element Typographies */
+.mentor-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    /* color: #1e293b; */
+    margin: 0 0 4px 0;
+    transition: color 0.2s ease;
+}
+
+.mentor-role {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #64748b;
+    margin: 0;
+}
+
+/* Responsive breakdowns for mobile views */
+@media (max-width: 850px) {
+    .mentors-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mentors-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+}
