@@ -99,3 +99,32 @@ extra_css:
 </section>
 
 ---
+
+<section class="mentors-section">
+  <div class="mentors-container">
+    <h2 class="mentors-heading">Meet Our Mentors</h2>
+    <div class="mentors-grid">
+      <!-- Mentor 1 -->
+      <div class="mentor-card">
+        <a href="https://www.linkedin.com/in/rakesh-sawan" target="_blank" rel="noopener noreferrer" class="mentor-link">
+          <div class="mentor-image-wrapper">
+            <!-- Using full section graphic reference as source placeholder -->
+            <img src="/assets/images/rakesh_sawan.jpeg" alt="Rakesh Sawan" class="mentor-image">
+          </div>
+          <h3 class="mentor-name">Rakesh Sawan</h3>
+        </a>
+        <p class="mentor-role">Founder & Mentor</p>
+      </div>
+      <!-- Mentor 2 -->
+      <div class="mentor-card">
+        <a href="https://www.linkedin.com/in/shubham-peace" target="_blank" rel="noopener noreferrer" class="mentor-link">
+          <div class="mentor-image-wrapper">
+            <img src="image_7f7878.png" alt="Shubham Kumar" class="mentor-image">
+          </div>
+          <h3 class="mentor-name">Shubham Kumar</h3>
+        </a>
+        <p class="mentor-role">Software Engineer</p>
+      </div>
+    </div>
+  </div>
+</section>
