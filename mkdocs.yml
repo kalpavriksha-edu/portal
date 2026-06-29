@@ -1,6 +1,6 @@
 site_name: Kalpavriksha
 site_description: An initiative to bridge the gap in college education and what is needed by industry
-site_url: https://kalpavriksha.org
+site_url: https://kalpavriksha-edu.github.io/portal/
 theme:
   name: material
   custom_dir: overrides

@@ -2,6 +2,9 @@
 hide:
   - navigation
   - toc
+
+extra_css:
+  - assets/stylesheets/tutorials.css
 ---
 
 
@@ -46,6 +49,50 @@ hide:
         </div>
     </div>
 </div>
+
+---
+
+<section class="tutorials-section">
+  <div class="tutorials-header">
+    <h2>Featured YouTube Tutorials</h2>
+    <a href="https://www.youtube.com" target="_blank" rel="noopener" class="view-all">View all</a>
+  </div>
+
+  <div class="tutorials-grid">
+    <!-- Card 1 -->
+    <a href="https://www.youtube.com/watch?v=3iX9a_l9W9Y" target="_blank" rel="noopener" class="tutorial-card">
+      <div class="thumbnail-wrapper">
+        <img src="https://i.ytimg.com/vi/3iX9a_l9W9Y/maxresdefault.jpg" alt="Variadic Functions in C Thumbnail">
+        <div class="play-button"></div>
+      </div>
+      <h3>Variadic Functions in C</h3>
+    </a>
+    <!-- Card 2 -->
+    <a href="https://www.youtube.com/watch?v=2ybLD6_2gKM" target="_blank" rel="noopener" class="tutorial-card">
+      <div class="thumbnail-wrapper">
+        <img src="https://i.ytimg.com/vi/2ybLD6_2gKM/maxresdefault.jpg" alt="Pointers Explained in C Thumbnail">
+        <div class="play-button"></div>
+      </div>
+      <h3>Pointers Explained in C</h3>
+    </a>
+    <!-- Card 3 -->
+    <a href="https://www.youtube.com/watch?v=R9PTBwOzceo" target="_blank" rel="noopener" class="tutorial-card">
+      <div class="thumbnail-wrapper">
+        <img src="https://i.ytimg.com/vi/R9PTBwOzceo/maxresdefault.jpg" alt="Data Structures Basics Thumbnail">
+        <div class="play-button"></div>
+      </div>
+      <h3>Data Structures Basics</h3>
+    </a>
+    <!-- Card 4 -->
+    <a href="https://www.youtube.com/watch?v=6wXZ_m3SbEs" target="_blank" rel="noopener" class="tutorial-card">
+      <div class="thumbnail-wrapper">
+        <img src="https://i.ytimg.com/vi/6wXZ_m3SbEs/maxresdefault.jpg" alt="Linked List in C Thumbnail">
+        <div class="play-button"></div>
+      </div>
+      <h3>Linked List in C</h3>
+    </a>
+  </div>
+</section>
 
 ---
 ## Powerful Features
