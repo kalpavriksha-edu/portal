@@ -1,0 +1,135 @@
+/* Container styling */
+/* .tutorials-section {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+} */
+
+/* Header section with title and view all link */
+.tutorials-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.tutorials-header h2 {
+    /* font-weight: 300; */
+    /* letter-spacing: -.01em; */
+    /* font-weight: 700; */
+    /* color: #1a1a1a; */
+    margin: 0;
+}
+
+.tutorials-header .view-all {
+    /* font-size: 0.875rem; */
+    /* color: #2e7d32; */
+    /* Soft dark green accent color */
+    text-decoration: none;
+    padding-right: .5rem;
+    /* font-weight: 500; */
+}
+
+.tutorials-header .view-all:hover {
+    text-decoration: underline;
+}
+
+/* Grid layout for cards */
+.tutorials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Tutorial card structuring styled as clickable links */
+.tutorial-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    /* Reset link decorations */
+    margin: .5rem;
+    color: inherit;
+}
+
+/* Image framing with modern aspect ratio and rounded borders */
+.thumbnail-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    overflow: hidden;
+    /* background-color: #000; */
+}
+
+.thumbnail-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Play Button Overlay centered on top of thumbnails */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Play icon triangle inside the circle */
+.play-button::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 0 8px 14px;
+    border-color: transparent transparent transparent #ffffff;
+    margin-left: 4px;
+    /* Optically centers the triangle graphic */
+}
+
+/* Interactions when hovering anywhere on the whole card */
+.tutorial-card:hover .play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+    transform: translate(-50%, -50%) scale(1.08);
+}
+
+.tutorial-card:hover h3 {
+    color: #2e7d32;
+    /* Visual feedback on title font */
+}
+
+/* Video titles text formatting */
+.tutorial-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    /* color: #111111; */
+    margin: 12px 0 0 0;
+    line-height: 1.4;
+    transition: color 0.2s ease;
+}
+
+/* Responsive adjustments for mid-sized displays and tablets */
+@media (max-width: 900px) {
+    .tutorials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive collapse for mobile interfaces */
+@media (max-width: 500px) {
+    .tutorials-grid {
+        grid-template-columns: 1fr;
+    }
+}
