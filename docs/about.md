@@ -4,7 +4,7 @@ hide:
   - toc
 
 extra_css:
-  - /assets/stylesheets/about.css
+  - assets/stylesheets/about.css
 ---
 
 <section class="about-section">
@@ -20,7 +20,7 @@ extra_css:
       </p>
     </div>
     <div class="about-image-wrapper">
-      <img src="assets/images/classroom_presentation_at_Kalpavriksha.png" alt="Classroom presentation at Kalpavriksha" class="about-image">
+      <img src="../assets/images/classroom_presentation_at_Kalpavriksha.png" alt="Classroom presentation at Kalpavriksha" class="about-image">
     </div>
   </div>
 </section>
@@ -30,7 +30,7 @@ extra_css:
     <div class="mission-container">
         <h2 class="mission-heading">Our Mission</h2>
         <div class="mission-block">
-            <img src="/assets/images/quote-icon.svg" alt="Quote" class="quote-icon">
+            <img src="../assets/images/quote-icon.svg" alt="Quote" class="quote-icon">
             <p class="mission-text main-quote">
                 To empower students with the right skills, engineering mindset and industry exposure to build
                 successful careers.
@@ -109,22 +109,72 @@ extra_css:
         <a href="https://www.linkedin.com/in/rakesh-sawan" target="_blank" rel="noopener noreferrer" class="mentor-link">
           <div class="mentor-image-wrapper">
             <!-- Using full section graphic reference as source placeholder -->
-            <img src="assets/images/rakesh_sawan.jpeg" alt="Rakesh Sawan" class="mentor-image">
+            <img src="../assets/images/rakesh_sawan.jpeg" alt="Rakesh Sawan" class="mentor-image">
           </div>
           <h3 class="mentor-name">Rakesh Sawan</h3>
         </a>
-        <p class="mentor-role">Founder & Mentor</p>
+        <p class="mentor-role">Founder</p>
       </div>
       <!-- Mentor 2 -->
       <div class="mentor-card">
         <a href="https://www.linkedin.com/in/shubham-peace" target="_blank" rel="noopener noreferrer" class="mentor-link">
           <div class="mentor-image-wrapper">
-            <img src="image_7f7878.png" alt="Shubham Kumar" class="mentor-image">
+            <img src="../assets/images/shubham_kumar.png" alt="Shubham Kumar" class="mentor-image">
           </div>
           <h3 class="mentor-name">Shubham Kumar</h3>
         </a>
-        <p class="mentor-role">Software Engineer</p>
+        <p class="mentor-role">Head Coach</p>
       </div>
-    </div>
+      <!-- Mentor 3 -->
+      <div class="mentor-card">
+        <a href="https://www.linkedin.com/in/arpit-jain-0a145a191/" target="_blank" rel="noopener noreferrer" class="mentor-link">
+          <div class="mentor-image-wrapper">
+            <img src="../assets/images/arpit_jain.png" alt="Arpit Jain" class="mentor-image">
+          </div>
+          <h3 class="mentor-name">Arpit Jain</h3>
+        </a>
+        <p class="mentor-role">Mentor</p>
+      </div>
+      <!-- Mentor 4 -->
+      <div class="mentor-card">
+        <a href="https://www.linkedin.com/in/gulshan-sharma-7bb3a5187/" target="_blank" rel="noopener noreferrer" class="mentor-link">
+          <div class="mentor-image-wrapper">
+            <img src="../assets/images/gulshan_sharma.jpeg" alt="Gulshan Sharma" class="mentor-image">
+          </div>
+          <h3 class="mentor-name">Gulshan Sharma</h3>
+        </a>
+        <p class="mentor-role">Mentor</p>
+      </div>
+      <!-- Mentor 5 -->
+      <div class="mentor-card">
+        <a href="https://www.linkedin.com/in/khushigarg22/" target="_blank" rel="noopener noreferrer" class="mentor-link">
+          <div class="mentor-image-wrapper">
+            <img src="../assets/images/khushi_garg.jpeg" alt="Khushi Garg" class="mentor-image">
+          </div>
+          <h3 class="mentor-name">Khushi Garg</h3>
+        </a>
+        <p class="mentor-role">Mentor</p>
+      </div>
+      <!-- Mentor 6 -->
+      <div class="mentor-card">
+        <a href="https://www.linkedin.com/in/anjali-burman/" target="_blank" rel="noopener noreferrer" class="mentor-link">
+          <div class="mentor-image-wrapper">
+            <img src="../assets/images/anjali_burman.jpeg" alt="Anjali Burman" class="mentor-image">
+          </div>
+          <h3 class="mentor-name">Anjali Burman</h3>
+        </a>
+        <p class="mentor-role">Mentor</p>
+      </div>
+      <!-- Mentor 7 -->
+      <div class="mentor-card">
+        <a href="https://www.linkedin.com/in/himanshu-dorbi/" target="_blank" rel="noopener noreferrer" class="mentor-link">
+          <div class="mentor-image-wrapper">
+            <img src="../assets/images/himanshu_dorbi.jpeg" alt="Himanshu Dorbi" class="mentor-image">
+          </div>
+          <h3 class="mentor-name">Himanshu Dorbi</h3>
+        </a>
+        <p class="mentor-role">Mentor</p>
+      </div>
+    </div>    
   </div>
 </section>
