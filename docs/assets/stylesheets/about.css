@@ -270,8 +270,17 @@
 /* Grid Layout for the 4 profiles */
 .mentors-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     gap: 30px;
+}
+
+.mentors-grid>:nth-child(1),
+.mentors-grid>:nth-child(2) {
+    grid-column: span 5;
+}
+
+.mentors-grid>:nth-child(n+3) {
+    grid-column: span 2;
 }
 
 /* Individual Card Structures */
