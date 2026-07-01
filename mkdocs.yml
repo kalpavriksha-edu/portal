@@ -39,7 +39,8 @@ nav:
   - Home: index.md
 
   - About:
-      - Vision: about/vision.md
+      about.md
+      # - Vision: about/vision.md
   #     - Mentors: about/mentors.md
 
   # - Learning Path:
@@ -86,6 +87,8 @@ extra:
       link: https://www.youtube.com/@kalpavriksha_education
     - icon: fontawesome/brands/linkedin-in
       link: https://www.linkedin.com/company/kalpavriksha-education/
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/DVzEgQ2t43
 
 copyright: Copyright © 2026 Kalpavriksha. All rights reserved.
 
