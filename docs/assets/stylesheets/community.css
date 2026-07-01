@@ -1,0 +1,143 @@
+/* Container & Base Styles */
+/* .community-section {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fcfdfd;
+} */
+
+/* Header Text */
+/* .community-header {
+    margin-bottom: 32px;
+} */
+
+.community-header h2 {
+
+    /* color: #111111; */
+    margin: 0;
+}
+
+.community-header p {
+    font-size: 0.95rem;
+    margin: 0;
+    padding-left: 1rem;
+}
+
+/* Balanced 3-Column Grid Layout */
+.community-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 1rem;
+}
+
+/* Card Container */
+.community-card {
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.community-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Vector SVG Icon Wrapper */
+.icon-wrapper {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-wrapper svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Authentic Brand Theme Coloring */
+.youtube-color {
+    fill: #FF0000;
+}
+
+.linkedin-color {
+    fill: #0A66C2;
+}
+
+.discord-color {
+    fill: #5865F2;
+}
+
+/* Typography */
+.community-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    /* color: #111111; */
+    margin: 0 0 10px 0;
+}
+
+.community-card p {
+    font-size: 0.9rem;
+    /* color: #555555; */
+    line-height: 1.5;
+    margin: 0 0 24px 0;
+    min-height: 42px;
+    /* Keeps buttons cleanly unified uniform row */
+}
+
+/* Action Buttons styled like image_e84ba1.png */
+.community-btn {
+    display: inline-block;
+    padding: 8px 24px;
+    border: 1px solid #a49c9c;
+    border-radius: 6px;
+    /* background-color: #ffffff; */
+    color: #333333;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.community-btn:hover {
+    background-color: #e2f4d6;
+    border-color: #cccccc;
+}
+
+/* Footer Signature text */
+.community-footer {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.community-footer p {
+    font-size: 1rem;
+    font-weight: 500;
+    /* color: #2b3a4a; */
+}
+
+/* Responsiveness breakpoints */
+@media (max-width: 900px) {
+    .community-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .community-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .community-card {
+        padding: 20px;
+    }
+}
