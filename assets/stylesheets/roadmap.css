@@ -1,0 +1,242 @@
+/* Base Layout Configurations */
+/* .roadmap-section {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background-color: #fcfdfd;
+} */
+
+/* Header Text Styles */
+/* .roadmap-header {
+    text-align: center;
+    margin-bottom: 50px;
+} */
+
+.roadmap-header h2 {
+    /* font-size: 2.25rem; */
+    /* font-weight: 800; */
+    /* color: #0f172a; */
+    /* margin: 0 0 12px 0; */
+    /* line-height: 1.25; */
+}
+
+.roadmap-header p {
+    /* font-size: 1.1rem; */
+    /* color: #64748b; */
+    /* margin: 0; */
+}
+
+/* Two-Column Grid Setup */
+.roadmap-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    /* gap: 60px; */
+    align-items: start;
+}
+
+/* Vertical Timeline Track Styling */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Continuous vertical timeline connector line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 38px;
+    bottom: 40px;
+    width: 2px;
+    background-color: #e2e8f0;
+    z-index: 1;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Round Steps Badge Containers */
+.step-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    z-index: 2;
+    flex-shrink: 0;
+    /* box-shadow: 0 0 0 6px #fcfdfd; */
+    /* Clears connection lines dynamically behind circles */
+}
+
+/* Accurate Colors mapped from image_3564bf.png */
+.icon-foundation {
+    background-color: #15803d;
+}
+
+.icon-dsa {
+    background-color: #16a34a;
+}
+
+.icon-se {
+    background-color: #65a30d;
+}
+
+.icon-projects {
+    background-color: #ea580c;
+}
+
+.icon-interview {
+    background-color: #db2777;
+}
+
+.icon-placement {
+    background-color: #6d28d9;
+}
+
+/* Timeline Body Content */
+.timeline-content h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    /* color: #1e293b; */
+    margin: 0 0 6px 0;
+    padding-top: 6px;
+}
+
+.timeline-content p {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin: 0 0 14px 0;
+}
+
+/* Horizontal pill tag collections */
+.tag-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background-color: #85e3ef;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 6px 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #334155;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+/* Sidebar Styling & Sticky Behavior */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: sticky;
+    top: 40px;
+}
+
+.sidebar-card {
+    background-color: #ffffff;
+    border: 1px solid #f1f5f9;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
+}
+
+.sidebar-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 20px 0;
+}
+
+/* Feature checklist styling with custom checkmark dots */
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list li {
+    font-size: 0.95rem;
+    color: #334155;
+    font-weight: 500;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.features-list li::before {
+    content: '✓';
+    color: #16a34a;
+    font-weight: 800;
+}
+
+/* Spec labels inside info card */
+.spec-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.spec-label {
+    font-size: 0.85rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.spec-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.highlight-dark {
+    color: #1e293b;
+}
+
+.highlight-blue {
+    color: #0252a3;
+}
+
+.spec-sublabel {
+    font-size: 0.95rem;
+    color: #64748b;
+}
+
+/* Call to Action Button */
+.cta-btn {
+    background-color: #15803d;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(21, 128, 61, 0.15);
+    transition: background-color 0.2s ease;
+}
+
+.cta-btn:hover {
+    background-color: #166534;
+}
+
+/* Tablet & Mobile Responsive Viewports */
+@media (max-width: 968px) {
+    .roadmap-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .sidebar {
+        position: static;
+    }
+}
