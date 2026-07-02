@@ -43,6 +43,18 @@ nav:
       # - Vision: about/vision.md
   #     - Mentors: about/mentors.md
 
+  - Roadmap: roadmap.md
+
+  # - Courses:
+  #     - Overview: courses/index.md
+  #     - C Programming: courses/c/index.md
+  #     - C++: courses/cpp/index.md
+  #     - DSA: courses/dsa/index.md
+  #     - Linux: courses/linux/index.md
+  #     - Git: courses/git/index.md
+  #     - Embedded Systems: courses/embedded/index.md
+  #     - System Design: courses/system-design/index.md
+
   # - Learning Path:
   #     - Overview: roadmap/overview.md
   #     - Foundation: roadmap/foundation.md
@@ -88,7 +100,7 @@ extra:
     - icon: fontawesome/brands/linkedin-in
       link: https://www.linkedin.com/company/kalpavriksha-education/
     - icon: fontawesome/brands/discord
-      link: https://discord.gg/DVzEgQ2t43
+      link: https://discord.gg/YXj967GR2a
 
 copyright: Copyright © 2026 Kalpavriksha. All rights reserved.
 
