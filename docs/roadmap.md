@@ -132,7 +132,7 @@ extra_css:
                 </div>
             </div>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZHXieniexbBh2MHsYrNoJ5omnsovwxLXWPvzoWtcEMnG1-A/viewform?usp=portal"
-                class="cta-btn">Enroll Now</a>
+                class="cta-btn" target="_blank" rel="noopener noreferrer">Enroll Now</a>
         </div>
     </div>
 </section>

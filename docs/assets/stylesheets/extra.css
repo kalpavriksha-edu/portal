@@ -94,6 +94,13 @@
     line-height: 1.6;
 }
 
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 24px;
+}
+
 .btn {
     display: inline-block;
     padding: 0.8rem 2rem;
@@ -211,6 +218,16 @@
     .hero-image {
         padding: 1rem 1rem 0 1rem;
         /* Adjust padding for mobile layout */
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
     }
 
     .feature-grid {

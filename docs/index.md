@@ -13,7 +13,10 @@ extra_css:
     <div class="hero-content">
         <h1>Become Industry <br> Ready Before <br> Graduation</h1>
         <p>Practical learning, Real world projects, <br>Placement supports</p>
-        <a href="#" class="btn">Explore Courses</a>
+        <div class="hero-buttons">
+        <a href="roadmap" class="btn btn-primary">Explore Courses</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZHXieniexbBh2MHsYrNoJ5omnsovwxLXWPvzoWtcEMnG1-A/viewform?usp=portal" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Enroll Now</a>
+    </div>
     </div>
     <div class="hero-image">
         <img src="assets/images/study.png" alt="Hero Image">
