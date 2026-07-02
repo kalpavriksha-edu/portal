@@ -139,5 +139,25 @@
 
     .community-card {
         padding: 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
+
+    .icon-wrapper {
+        align-self: center;
+    }
+
+    .community-card h3 {
+        align-self: center;
+        /* color: #111111; */
+        margin: 0 0 10px 0;
+    }
+
+    .community-card p {
+        margin: 0 0 0.5rem 0;
+    }
+
+    .community-btn {
+        align-self: center;
+    }
+
 }
