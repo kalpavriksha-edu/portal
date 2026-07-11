@@ -104,11 +104,16 @@
 .btn {
     display: inline-block;
     padding: 0.8rem 2rem;
-    background-color: #007bff;
-    color: white;
+    background-color: #27c460;
+    color: white !important;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #166534;
+    color: rgb(3, 217, 3) !important;
 }
 
 /* Hero Image Side */
