@@ -3,6 +3,8 @@ site_description: An initiative to bridge the gap in college education and what 
 site_url: https://kalpavriksha-edu.org/
 theme:
   name: material
+  logo: assets/images/logo.png
+  favicon: assets/images/logo.png
   custom_dir: overrides
   features:
     - navigation.tabs
